@@ -24,8 +24,6 @@
         url('../fonts/roboto-v30-latin-700.svg#Roboto') format('svg');
 }
 
-
-
 /* container color */
 :root{
     --color-primary-number-one: #FFFFFF;
@@ -35,41 +33,25 @@
     --color-secondary-number-two: #747272;
     --color-secondary-number-three: #011F4A;
     --color-secondary-number-four: #FFD02B;
+    --color-secondary-number-five: #000000;
 }
-
 
 
 /* base */
-*{
-
-}
-
 body{
-
+    color: var(--color-primary-number-three);
+    font-family:'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin-top: 0;
-}
-
-.section {
-    padding: 48px 0;
-}
-
 li {
     list-style-type: none;
 }
-
 .button{
     color: var(--color-primary-number-one);
     background-color: var(--color-primary-number-two);
     font-size: 18px;
+    font-weight: 600;
     border: 2px solid var(--color-primary-number-two);
     border-radius: 32px;
     cursor: pointer
@@ -79,14 +61,13 @@ li {
     background-color: transparent;
 }
 
+
+
 /* header */
 .link-nav{
     color: var(--color-primary-number-three);
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
 }
-
 .link-nav:hover{
     color: var(--color-primary-number-two);
     font-weight: 700;
@@ -94,61 +75,88 @@ li {
 
 
 
-
-
 /* hero section */
 .hero-title {
     color: var(--color-primary-number-two);
-    text-transform: capitalize;
+    font-family: 'Play';
     font-size: 140px;
+    font-weight: 700;
+    text-transform: capitalize;
 }
-
-
+.pinfo{
+    color: var(--color-secondary-number-one);
+    font-size: 12px;
+}
 
 
 
 /* section  */
-
 .h2{
-    color: var(--color-primary-number-three);
+    font-family: 'Play';
+    font-size: 64px;
+    font-weight: 700;
 }
 .accent-h2{
     color: var(--color-primary-number-two);
 }
-.h2 .b-z{
+
+
+
+/* section pro-nas */
+.h2 .bz {
     text-transform: capitalize;
 }
+.bzs {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.p-pro-nas{
+    font-size: 22px;
+}
+
+
+
+/* section chomu-my */
+.p-chomu-my{
+    color: var(--color-secondary-number-five);
+}
+
+
+
+/* section nasi-procedury */
+.p-nasi-procedury{
+    color: var(--color-primary-number-one);
+    font-size: 22px;
+}
+
+
+
+/* section-kontakty */
+
 
 
 /* footer */
 .footer{
     background-color: var(--color-primary-number-three);
 }
-
 .link-footer{
     color: var(--color-primary-number-one);
     text-decoration: none;
     font-size: 16px;
-    font-weight: 400;
 }
 .link-footer:hover {
     color: var(--color-primary-number-two);
     font-weight: 700;
 }
-
 .address-footer {
     font-style: normal;
 }
-
-
 .icon-footer {
-    color: #FFFFFF;
+    color: var(--color-primary-number-one);
 }
-
 .pcopyright{
 color: var(--color-secondary-number-two) ;
 font-size: 13px;
-font-weight: 400;
 }
 
 
