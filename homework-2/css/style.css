@@ -44,10 +44,10 @@
 
 body{
     color: var(--color-primary-number-three);
+    /* background-color: aquamarine; */
     font-family:'roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    background-color: lightblue;
     margin: 0;
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -106,11 +106,19 @@ ul {
 .cap {
     text-transform: capitalize;
 }
+.centered{
+    text-align: center;
+    margin-bottom: 48px;
+}
 
 
 /* header */
+.header-container{
+    position: relative;
+}
 .header{
-    background-color: lightblue;
+    position: absolute;
+    width: 100%;
     padding: 32px 0;
 }
 
@@ -147,7 +155,7 @@ ul {
     display: flex;
     align-items: center;
 }
-.nav-icons:hover{
+.nav-icon:hover{
     fill: var(--color-primary-number-two)
 }
 
@@ -157,49 +165,24 @@ ul {
 }
 .link-nav:hover{
     color: var(--color-primary-number-two);
-    font-weight: 700;
 }
 
 
 
 /* hero section */
 .hero-section{
+    padding: 124px 0;
     background-image: url(../images/cosmetologist-main.jpeg);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-position: bottom;
 }
-
 .hero-container{
     padding-left: 106px;
-    display: flex;
-    flex-direction: column;
 }
 
-
-/* .hero-container{
-    
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.hero-kosmetologic-clinic{
+    margin-bottom: 16px;
 }
-.hero-title-content{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 20%;
-}
-.hero-title-content>h1,p{
-    margin-bottom: 0;
-}
-.hero-title-content>p{
-    padding-bottom: 16px;
-}
-.hero-button-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
-
 .hero-title {
     color: var(--color-primary-number-two);
     font-family: 'Play';
@@ -207,65 +190,163 @@ ul {
     font-weight: 700;
     text-transform: capitalize;
     line-height: 0.8;
+    margin-bottom: 40px;
 }
-.hero-text{
+.hero-button{
+    margin-bottom: 14px;
+}
+.hero-button-text{
     color: var(--color-secondary-number-one);
     font-size: 12px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 232px;
+    text-align: center;
 }
 
 
 
 /* about us section */
-.au-text-accent {
-    font-weight: 600;
-    text-transform: capitalize;
+.about-us-container{
+    display: flex;
+    gap: 32px;
+}
+.about-us-content{
+    width: 100%;
+    max-width: 700px;
+}
+.about-us-title{
+    margin: 40px 0;
 }
 .about-us-text{
     font-size: 22px;
+    line-height: 1.72;
+}
+.a-u-item{
+    margin-bottom: 40px;
+}
+.a-u-text-accent {
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
+.a-u-before{
+    width: 100%;
+    max-width: 336px;
+    height: 100%;
+    max-height: 328px;
+}
+.a-u-after{
+    width: 100%;
+    max-width: 342px;
+    height: 100%;
+    max-height: 328px;
+}
+
+.icon-star-big{
+    fill: var(--color-secondary-number-three);
+}
+.icon-star-medium{
+    fill: var(--color-primary-number-two);
+}
+.icon-star-small{
+    fill: var(--color-secondary-number-two);
+}
 
 /* why us section */
-.why-us-title{
-    margin-bottom: 48px;
-    text-align: center;
-}
 .why-us-list {
-    padding: 0 90px;
     color: var(--color-secondary-number-five);
+    padding: 0 90px;
     display: flex;
-    flex-basis: ((100% - 56px) / 3);
+    flex-wrap: wrap;
     gap: 56px;
 }
-.why-us-cards{
-    
-    background-color: var(--color-primary-number-one);
-    border-radius: 32px;
+.why-us-item{
+    flex-basis: ((100% - 56px) / 3);
 }
-.why-us-card{
+.why-us-cards{
+    background-color: var(--color-primary-number-one);
+    width: 100%;
+    max-width: 316px;
     padding: 24px 32px;
     text-align: center;
     line-height: 1.5;
+    border-radius: 32px;
+    box-shadow: 0 4px 4px 0 #A8C6F5;
+}
+
+.icons-cards{
+fill: var(--color-primary-number-two);
 }
 
 /*procedures section */
 .procedures-container{
     display: flex;
+    align-items: center;
+    gap: 32px;
 }
 .procedures-list{
     color: var(--color-primary-number-one);
     font-size: 22px;
+    display: flex;
+    gap: 16px;
+}
+.procedures-item{
+    flex-basis: ((100% - 16px) / 3);
+    border-radius: 120px, 4px, 120px, 4px;
+}
+.procedures-card{
+    width: 344px;
+    height: 456px;
+    padding: 372px 77px 32px 115px;
+    text-align: center;
+}
+.procedures-text{
+    width: 100%;
+    max-width: 152px;
+}
+.procedures-masks{
+    background-image: linear-gradient(180deg, rgba(1, 28, 68, 0)55%, rgba(1, 28, 68, 0.73) 72.58%, rgb(1, 28, 68) 100%), url(../images/cosmetic-procedures-one.jpeg);
+    background-position: center;
+    border-radius: 4px 120px 4px 120px;
+}
+.procedures-injection{
+    background-image: linear-gradient(180deg, rgba(1, 28, 68, 0)55%, rgba(1, 28, 68, 0.73) 72.58%, rgb(1, 28, 68) 100%), url(../images/cosmetic-procedures-two.jpeg);
+    background-position: center;
+    border-radius: 4px 120px 4px 120px;
+}
+.procedures-cleaning{
+    background-image: linear-gradient(180deg, rgba(1, 28, 68, 0)55%, rgba(1, 28, 68, 0.73) 72.58%, rgb(1, 28, 68) 100%), url(../images/cosmetic-procedures-three.jpeg);
+    background-position: top;
+    border-radius: 4px 120px 4px 120px;
 }
 
-
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    fill: var(--color-primary-number-three);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-number-three);
+    padding: 0;
+}
+.carousel-button.next {
+    transform: rotate(180deg);
+}
+.carousel-button:hover{
+    fill: var(--color-primary-number-one);
+    background-color: var(--color-primary-number-two);
+    border: var(--color-primary-number-one);
+}
 
 /* contact section */
 .contact-section {
     padding-bottom: 96px;
-}
-.contact-title{
-    text-align:  center;
-    margin-bottom: 48px;
 }
 .contact-content {
     padding-left: 76px;
@@ -293,7 +374,7 @@ ul {
 
 .singup-title{
     color: var(--color-primary-number-one);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     text-align: center;
 }
@@ -304,19 +385,9 @@ ul {
 .accent-singup{
     color: var(--color-primary-number-two);
 }
-.singup-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.singup-text{
-    color: var(--color-primary-number-one);
-    font-size: 13px;
-    font-weight: 400;
-    padding: 18px 32px;
-    margin-bottom: 16px;
-    border: 2px solid var(--color-secondary-number-two);
-    border-radius: 32px;
+
+.singup-button {
+    margin-bottom: 8px;
 }
 .singup-rules{
     color: var(--color-secondary-number-two);
@@ -324,8 +395,8 @@ ul {
     font-weight: 400;
     text-align: center;
 }
-.singup-button{
-    margin-bottom: 8px;
+.singup-rules-text{
+    margin-bottom: 6px;
 }
 .singup-rules-link{
     color: var(--color-secondary-number-two);
@@ -363,7 +434,6 @@ ul {
 }
 .link-footer:hover{
     color: var(--color-primary-number-two);
-    font-weight: 700;
 }
 
 .footer-socials{
