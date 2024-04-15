@@ -275,7 +275,7 @@ main{
     gap: 56px;
 }
 .why-us-item{
-    flex-basis: ((100% - 56px) / 3);
+    flex-basis: calc((100% - 112px) / 3);
 }
 .why-us-cards{
     background-color: var(--color-primary-number-one);
@@ -309,8 +309,8 @@ fill: var(--color-primary-number-two);
     gap: 16px;
 }
 .procedures-item{
-    flex-basis: ((100% - 16px) / 3);
-    border-radius: 120px, 4px, 120px, 4px;
+    flex-basis: calc((100% - 32px) / 3);
+    border-radius: 120px 4px 120px 4px;
 }
 .procedures-card{
     width: 344px;
