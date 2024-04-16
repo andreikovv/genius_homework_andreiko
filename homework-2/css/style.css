@@ -240,17 +240,18 @@ main{
     text-transform: capitalize;
 }
 
-.a-u-before{
+.client-picture{
+    border-radius: 50%;
     width: 100%;
-    max-width: 336px;
     height: 100%;
     max-height: 328px;
 }
-.a-u-after{
-    width: 100%;
+.client-before{
+    max-width: 336px;
+    margin-bottom: 40px;
+}
+.client-after{
     max-width: 342px;
-    height: 100%;
-    max-height: 328px;
 }
 
 .icon-star-big{
@@ -305,7 +306,6 @@ fill: var(--color-primary-number-two);
     color: var(--color-primary-number-one);
     font-size: 22px;
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
 }
 .procedures-item{
